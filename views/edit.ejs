@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/style/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Abhayraj</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/new">New Post</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Edit Blog Post</h1>
+        <form action="/update/<%= post.id %>" method="POST">
+            <input type="text" name="title" value="<%= post.title %>" required>
+            <textarea name="content" required><%= post.content %></textarea>
+            <button type="submit" class="post">Update Post</button>
+        </form>
+        <a href="/">Back to Home</a>
+    </div>
+    <footer>
+        <p>Follow me on:</p>
+        <a href="https://www.linkedin.com/in/abhayraj-motakpalli-307925174/" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/abhayyy_codes/" target="_blank">Instagram</a>
+        <a href="https://github.com/abhayrajsm" target="_blank">GitHub</a>
+        <p>© <%= new Date().getFullYear() %> Copyright belongs to Abhayraj</p>
+    </footer>
+
+</body>
+
+</html>

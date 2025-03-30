@@ -1,0 +1,187 @@
+/* Comic Style */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+Bhai+2&display=swap');
+
+
+
+
+body {
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #ffeb3b;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.post {
+    margin: 10px;
+}
+
+/* Title */
+h1 {
+    font-size: 3rem;
+    color: #333;
+    text-shadow: 3px 3px 0px #ff5722, 6px 6px 0px #ffffff;
+}
+
+/* Links */
+a {
+    font-size: 1.2rem;
+    color: white;
+    background: #ff5722;
+    padding: 9px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 0px #333;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+a:hover {
+    background: #000000;
+    transform: scale(1.05);
+}
+
+/* Blog Post List */
+ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+}
+
+li {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px #333;
+    border: 3px solid black;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: rotate(-2deg);
+}
+
+/* Buttons */
+button {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1rem;
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 0px #333;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #000000;
+    transform: scale(1.1);
+}
+
+/* Form Styling */
+form input,
+form textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-transform: capitalize;
+}
+
+form textarea {
+    height: 150px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background: #4caf50;
+}
+
+button[type="submit"]:hover {
+    background: #388e3c;
+}
+
+/* Header */
+header {
+    background: #ff5722;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 0px #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 3px 3px 0px black;
+    margin: 0;
+    font-weight: 500;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background: white;
+    color: #ff5722;
+    text-shadow: none;
+    box-shadow: 2px 2px 0px black;
+}
+
+nav a:hover {
+    background: #000000;
+    color: white;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ffeb3b;
+    font-weight: 400;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
